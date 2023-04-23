@@ -1,9 +1,19 @@
+@font-face {
+    font-family: Mario;
+    src: url(../fonts/super_mario_256/SuperMario256.ttf);
+}
+@font-face {
+    font-family: smb;
+    src: url(../fonts/super-mario-bros-font/SuperMarioBros-ov7d.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     color: #fff;
     box-sizing: border-box;
     list-style: none;
+    text-shadow: 1px 0.5px 3px #555;
 }
 
 .main__bg {
@@ -21,11 +31,6 @@
     position: fixed;
     z-index: -1;
     /*! Debugging */
-    /* width:100%;      */
-    /* height: auto; */
-    /* top: -85px; */
-    /* left: -160px; */
-    /* margin: 0 auto; */
 }
 
 /** Blue Navbar */
@@ -110,6 +115,23 @@
 
 
 /** Main Content */
+.jumbotron__marioSpan {
+    font-family: "smb";
+}
+
+.container h3 {
+    font-family: Mario;
+    color: red;
+    /* text-shadow: -1px -1px #fff ; */
+    /* background-color: #fff; */
+        font: bold 48px 'Futura';
+        /* color: transparent; */
+        text-shadow: 1px 1px 1px #fff, 1.5px 1.5px 1px #555;
+        /* -webkit-background-clip: text; */
+        /* -moz-background-clip: text; */
+        /* background-clip: text; */
+}
+
 .gallery {
     width: 100%;
     height: auto;
@@ -126,6 +148,7 @@
     border: 2px solid #fff;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     transition: all 0.5s;
     border-radius: 5px;
 }
@@ -213,7 +236,6 @@
     .gallery {
         width: 100%;
         height: 10vh;
-        /* height: auto; */
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
