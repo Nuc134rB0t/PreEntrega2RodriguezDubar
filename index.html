@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mario!</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="./img/favicon_io/favicon-16x16.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <script src="./js/scrtips.js"></script>
+</head>
+
+<body class="main__bg">
+
+    <video id="main__videoBg" autoplay muted loop poster="./img/smb-movie.jpg__bkp">
+        <source type="video/mp4" src="./video/smb-moviecut.mp4">
+    </video>
+    
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg__blueGradient">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="logo"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.vidaextra.com/juegos-nuevos/super-mario-bros-pelicula-reparto-fecha-estreno-trailer-ultimas-noticias-pelicula-nintendo">Juegos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <ul class="navbar__mario">
+        <li class="tooltip__mario__mario"><a onclick="audioCoin.play(); audioBump.play(); audioJump.play();" class="gather coin" href="#"><img class="gather" src="./img/bricks.png" alt="" width="50px"></a></li>
+        <li class="tooltip__mario__mario"><span class="tooltiptext">Inicio</span><a class="" href="#" target="_self"><img class="gather" src="./img/questionhit.png" alt="" width="50px"></a></li>
+        <li class="tooltip__mario__mario"><a onclick="audioCoin.play(); audioBump.play(); audioJump.play();" class="coin" href="#"><img class="gather" src="./img/bricks.png" alt="" width="50px"></a></li>
+        <li class="tooltip__mario__mario"><span class="tooltiptext">Juegos</span><a class="" href="./pages/juegos.html"><img class="gather" src="./img/question.png" alt="" width="50px"></a></li>
+        <!-- <li class="tooltip__mario__mario"><a href="#"><img src="./img/coin.gif" alt=""></a></li> -->
+    </ul>
+    
+    <main>
+
+    </main>
+
+    <footer>
+        <!-- place footer here -->
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    
+    <!-- Sound Effects -->
+    <script src="./js/scrtips.js"></script>
+    
+</body>
+
+</html>
