@@ -21,6 +21,33 @@
 
 ==================================================
 
+Beta 3 - Tag b0.3
+
+## Correcciones ##
+
+# ./
+- Se reognanizan las carpetas.
+
+# index.html
+- Se agrega sonido a Ladrillos y logo de MarioBros. (Antes había quedado incorrecto).
+- Alineación del navbar mejorada.
+- Se agrega overflow-x en tamaño medio.
+- Los articulos pasan de ser div a ser articles.
+
+# juegos.html
+- Alineación del navbar mejorada.
+- Ajustes al grid en tamaño medio y pequeño.
+
+## Actualizaciones ##
+
+# index.html
+- Los articulos tienen un fondo con colores interactivos.
+
+# juegos.html
+- Las tarjetas de los juegos tienen un fondo con colores interactivos.
+
+==================================================
+
 Beta 2 - Tag b0.2
 
 ## Correcciones ##

@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="shortcut icon" href="./img/favicon_io/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./media/img/favicon_io/favicon-16x16.png" type="image/x-icon" />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,9 +18,8 @@
 </head>
 
 <body class="main__bg">
-
-    <video id="main__videoBg" autoplay controls muted loop poster="./img/smb-movie.jpg__bkp">
-        <source type="video/mp4" src="./video/smb-moviecut.mp4">
+    <video id="main__videoBg" autoplay controls muted loop poster="./media/img/smb-movie.jpg__bkp">
+        <source type="video/mp4" src="./media/video/smb-moviecut.mp4" />
     </video>
 
     <header>
@@ -35,22 +34,24 @@
                 <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./pages/juegos.html">Juegos</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/juegos.html">Juegos</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <ul class="navbar__mario">
-        <li class="tooltip__mario__mario"><a onclick="audioCoin.play(); audioBump.play(); audioJump.play();"
-                class="gather coin" href="#"><img class="gather" src="./img/bricks.png" alt="" width="50px"></a></li>
-        <li class="tooltip__mario__mario"><span class="tooltiptext">Inicio</span><a class="" href="#"
-                target="_self"><img class="gather" src="./img/questionhit.png" alt="" width="50px"></a></li>
-        <li class="tooltip__mario__mario"><a onclick="audioCoin.play(); audioBump.play(); audioJump.play();"
-                class="coin" href="#"><img class="gather" src="./img/bricks.png" alt="" width="50px"></a></li>
-        <li class="tooltip__mario__mario"><span class="tooltiptext">Juegos</span><a class=""
-                href="./pages/juegos.html"><img class="gather" src="./img/question.png" alt="" width="50px"></a></li>
-        <!-- <li class="tooltip__mario__mario"><a href="#"><img src="./img/coin.gif" alt=""></a></li> -->
+        <li class="tooltip__mario"><img onclick="audioCoin.play(); audioBump.play(); audioJump.play();" class="brick1 gather coin" src="./media/img/bricks.png" alt="" width="50px" /></li>
+        <!-- <li class="tooltip__mario"></li> -->
+        <!-- <img id="brick1" class="jumpingCoin1" src="./media/img/coin.gif" alt="Moneda de Mario Bros." /> -->
+        <li class="tooltip__mario"><span class="tooltiptext">Inicio</span><a class="" href="#" target="_self"><img class="gather"src="./media/img/questionhit.png" alt="" width="50px" /></a></li>
+        <li class="tooltip__mario"><img onclick="audioCoin.play(); audioBump.play(); audioJump.play();" class="brick2 gather coin" src="./media/img/bricks.png" alt="" width="50px" /></li>
+        <!-- <li class="tooltip__mario"></li> -->
+        <!-- <img class="jumpingCoin2" src="./media/img/coin.gif" alt="Moneda de Mario Bros." /> -->
+        <li class="tooltip__mario"><span class="tooltiptext">Juegos</span><a class="" href="./pages/juegos.html"><img class="gather"src="./media/img/question.png" alt="" width="50px" /></a></li>
     </ul>
 
     <main>
@@ -61,18 +62,42 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-xl-4">
-                    <h3>Video Juego</h3>
-                    <p>Mario Bros. (マリオブラザーズ Mario Burazāzu?, lit. Hermanos Mario) es un videojuego de arcade desarrollado por Nintendo en el año 1983. Fue creado por Shigeru Miyamoto. Ha sido presentado como un minijuego en la serie de Super Mario Advance y otros juegos. Mario Bros. ha sido relanzado para Wii, Nintendo 3DS y Wii U en los servicios de Consola Virtual en Japón, Norteamérica, Europa y Australia.</p>
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                    <h3>Desarrolladores</h3>
-                    <p>Mario Bros. fue creado por Shigeru Miyamoto (1952-) y Mitsuharo Sato con una historia creada también por Shigeru Miyamoto, principales desarrolladores del videojuego Donkey Kong.</p>
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                    <h3>Nintendo</h3>
-                    <p>Nintendo Company, Ltd. (任天堂株式会社 Nintendō Kabushiki-gaisha?) es una empresa de entretenimiento dedicada a la investigación, desarrollo y distribución de software y hardware de videojuegos, y juegos de cartas, con sede en Kioto, Japón.</p>
-                </div>
+                <!-- <div class="games"><div class="innerGames box1"></div></div> -->
+                <section class="col-sm-12 col-md-12 col-xl-4 cards">
+                    <article class="innerCards p-3">
+                        <h3>Video Juego</h3>
+                        <p>
+                            Mario Bros. (マリオブラザーズ Mario Burazāzu?, lit. Hermanos
+                            Mario) es un videojuego de arcade desarrollado por Nintendo en el
+                            año 1983. Fue creado por Shigeru Miyamoto. Ha sido presentado como
+                            un minijuego en la serie de Super Mario Advance y otros juegos.
+                            Mario Bros. ha sido relanzado para Wii, Nintendo 3DS y Wii U en
+                            los servicios de Consola Virtual en Japón, Norteamérica, Europa y
+                            Australia.
+                        </p>
+                    </article>
+                </section>
+                <section class="col-sm-12 col-md-6 col-xl-4 cards">
+                    <article class="innerCards p-3">
+                        <h3>Desarrolladores</h3>
+                        <p>
+                            Mario Bros. fue creado por Shigeru Miyamoto (1952-) y Mitsuharo
+                            Sato con una historia creada también por Shigeru Miyamoto,
+                            principales desarrolladores del videojuego Donkey Kong.
+                        </p>
+                    </article>
+                </section>
+                <section class="col-sm-12 col-md-6 col-xl-4 cards">
+                    <article class="innerCards p-3">
+                        <h3>Nintendo</h3>
+                        <p>
+                            Nintendo Company, Ltd. (任天堂株式会社 Nintendō Kabushiki-gaisha?)
+                            es una empresa de entretenimiento dedicada a la investigación,
+                            desarrollo y distribución de software y hardware de videojuegos, y
+                            juegos de cartas, con sede en Kioto, Japón.
+                        </p>
+                    </article>
+                </section>
             </div>
         </div>
     </main>
@@ -92,7 +117,6 @@
 
     <!-- Sound Effects -->
     <script src="./js/scrtips.js"></script>
-
 </body>
 
 </html>
