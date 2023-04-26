@@ -19,8 +19,20 @@
 # Bitácora de cambios #
 
 
-#
-#
+# Versión 1.1 - Tag v1.1
+
+# Correcciones #
+
+## index.html
+- Cambios menores.
+
+## juegos.html
+- Sonido de los ladrillos.
+
+## ReadMe.md
+- Camios en el uso de los simbolos.
+
+
 
 
 # Versión 1 - Tag v1.0
@@ -35,8 +47,8 @@
 - Se agregan moneda y puntaje que saltan al hacer clic sobre los ladrillos del menú.
 
 
-#
-#
+
+
 
 
 # Beta 3 - Tag b0.3
@@ -65,8 +77,8 @@
 - Las tarjetas de los juegos tienen un fondo con colores interactivos.
 
 
-#
-#
+
+
 
 
 # Beta 2 - Tag b0.2
@@ -95,8 +107,8 @@
 - Se agrega el archivo bitácoda de cambios.
 
 
-#
-#
+
+
 
 
 # Beta 1 - Tag b0.1
