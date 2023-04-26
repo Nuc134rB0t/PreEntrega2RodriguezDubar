@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Prueba Mario!</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="../media/img/favicon_io/favicon-16x16.png" type="image/x-icon">
+
+
+    <style>
+        
+        #container {
+            width: 624px;
+            margin: 300px auto;
+        }
+        .brickWrapper {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        .brickWrapper:active .coin {
+            background-image: url(./media/img/coin.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: jump 0.3s linear;
+            opacity: 1;
+            z-index: -1;
+            /* margin-top: 10px; */
+            /* -webkit-animation: jump 0.5s  linear; */
+            /* width: 50px; */
+        }
+        .coin {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            opacity: 1;
+            /* transition: all 0.2; */
+            /* -webkit-transition: all 0.2; */
+            /* -moz-transition: none; */
+        }
+        .points {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 50px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 1px 3px #000;
+            font-size:  18px;
+            font-weight: bold;
+            opacity: 0;
+            /* z-index: -1; */
+        }
+        .brickWrapper:active .points {
+            opacity: 1;
+            animation: points 0.3s linear;
+            -webkit-animation: points 0.3s  linear;
+            -moz-animation: points 0.3s linear;
+        }
+        @keyframes jump {
+            0% {
+                top: 0; font-size: 18px;
+            }
+            50% {
+                top: -80px;
+            }
+            100% {
+                top: 0;
+                font-size: 400px;
+            }
+        }
+        @keyframes points {
+            0% {
+                top: -50px;
+            }
+            100% {
+                top: -90px;
+            }
+        }
+
+        p.block {
+            text-align: left;
+            animation: questionmark 2s infinite linear;
+        }
+        .block {
+            height: 50px;
+            width: 50px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+            background: #f6da17;
+            border: 3px solid #000;
+            border-radius: 5px;
+            box-shadow: inset -4px -4px 1px #d6a12d;
+            text-align: center;
+            color: white;
+            font: bold 65px/48px 'fallback', italic;
+            text-shadow: 4px 4px 0 #000;
+        }
+        @keyframes questionmark {
+            0% {
+                text-indent: -50px;
+            }
+            100% {
+                text-indent: 50px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="brickWrapper">
+            <!-- <p class="coin">Potencia de fuego</p> -->
+            <div class="coin"></div>
+            <p class="points">200</p>
+            <p class="block">?</p>
+        </div>
+        <div class="brickWrapper">
+            <div class="coin"></div>
+            <p class="points">200</p>
+            <p class="block">?</p>
+        </div>
+        <div class="brickWrapper">
+            <div class="coin"></div>
+            <p class="points">200</p>
+            <p class="block">?</p>
+        </div>
+        <div class="brickWrapper">
+            <div class="coin"></div>
+            <p class="points">200</p>
+            <p class="block">?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

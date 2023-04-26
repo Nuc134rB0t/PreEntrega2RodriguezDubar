@@ -133,72 +133,66 @@ body::-webkit-scrollbar-thumb {
     right: -1px;
 }
 
-/*! Jumping Coin */
-.jumpingCoin1 img,
-.jumpingCoin2 img {
-    width: 50px;
+/** Jumping Coin */
+.brickWrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* float: left; */
 }
-.jumpingCoin1 {
-    display: none;
-    position: fixed;
-    top: 60px;
-    right: calc(5% + 148px);
+.brickWrapper:active .coins {
+    background-image: url(../media/img/coin.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: jump 0.3s linear;
+    opacity: 1;
+    z-index: -1;
+}
+.coins {
+    position: absolute;
+    margin: 0;
+    padding: 0;
     width: 50px;
     height: 50px;
-    animation-name: coin1;
-    animation-duration: 0.5s;
-    z-index: 1;
+    text-align: center;
+    opacity: 1;
 }
-.jumpingCoin2 {
-    position: fixed;
-    top: 60px;
-    right: calc(5% + 48px);
+.points {
+    position: absolute;
+    margin: 0;
+    padding: 0;
     width: 50px;
-    height: 50px;
-    animation-name: coin2;
-    animation-duration: 0.5s;
-    /* visibility: hidden; */
-    z-index: 1;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 3px #000;
+    font-size:  18px;
+    font-weight: bold;
+    opacity: 0;
 }
-.jumpingCoin1:active,
-.jumpingCoin2:active {
-    animation-name: coin;
-    animation-duration: 1s;
+.brickWrapper:active .points {
+    opacity: 1;
+    animation: points 0.3s linear;
 }
-@keyframes coin1 {
+@keyframes jump {
     0% {
-        top: 60px;
-        visibility: hidden;
+        top: 0;
     }
     50% {
-        top: 2px;
-        opacity: 1;
+        top: -80px;
     }
     100% {
-        top: 60px;
-        visibility: hidden;
+        top: 0;
     }
 }
-@keyframes coin2 {
+@keyframes points {
     0% {
-        top: 60px;
-        background-image: url(../media/img/coin.gif);
-        visibility: hidden;
-    }
-    50% {
-        top: 2px;
-        background-image: url(../media/img/coin.gif);
-        width: 50px;
-        height: 50px;
-        opacity: 1;
+        top: -50px;
     }
     100% {
-        top: 60px;
-        visibility: hidden;
+        top: -90px;
     }
 }
 
-/*! ******/
 
 /*************************************************** Main Content */
 
@@ -479,6 +473,9 @@ body::-webkit-scrollbar-thumb {
     }
 
     /* Go Live */
+    main {
+        padding: 15px;
+    }
     .main__bg {
         background: #000;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/img/bg.jpg");

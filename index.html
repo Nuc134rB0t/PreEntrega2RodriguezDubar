@@ -44,14 +44,28 @@
     </header>
 
     <ul class="navbar__mario">
-        <li class="tooltip__mario"><img onclick="audioCoin.play(); audioBump.play(); audioJump.play();" class="brick1 gather coin" src="./media/img/bricks.png" alt="" width="50px" /></li>
-        <!-- <li class="tooltip__mario"></li> -->
-        <!-- <img id="brick1" class="jumpingCoin1" src="./media/img/coin.gif" alt="Moneda de Mario Bros." /> -->
-        <li class="tooltip__mario"><span class="tooltiptext">Inicio</span><a class="" href="#" target="_self"><img class="gather"src="./media/img/questionhit.png" alt="" width="50px" /></a></li>
-        <li class="tooltip__mario"><img onclick="audioCoin.play(); audioBump.play(); audioJump.play();" class="brick2 gather coin" src="./media/img/bricks.png" alt="" width="50px" /></li>
-        <!-- <li class="tooltip__mario"></li> -->
-        <!-- <img class="jumpingCoin2" src="./media/img/coin.gif" alt="Moneda de Mario Bros." /> -->
-        <li class="tooltip__mario"><span class="tooltiptext">Juegos</span><a class="" href="./pages/juegos.html"><img class="gather"src="./media/img/question.png" alt="" width="50px" /></a></li>
+        <li class="tooltip__mario brickWrapper">
+            <img onclick="audioCoin.play(); audioBump.play(); audioJump.play();" class="brick1 gather coin" src="./media/img/bricks.png" alt="" width="50px" />
+            <p class="points">200</p>
+            <div class="coins"></div>
+        </li>        
+        <li class="tooltip__mario">
+            <span class="tooltiptext">Inicio</span>
+            <a class="" href="#" target="_self">
+                <img class="gather"src="./media/img/questionhit.png" alt="" width="50px" />
+            </a>
+        </li>
+        <li class="tooltip__mario brickWrapper">
+            <img onclick="audioCoin.play(); audioBump.play(); audioJump.play();" class="brick2 gather coin" src="./media/img/bricks.png" alt="" width="50px" />
+            <p class="points">200</p>
+            <div class="coins"></div>
+        </li>
+        <li class="tooltip__mario">
+            <span class="tooltiptext">Juegos</span>
+            <a class="" href="./pages/juegos.html">
+                <img class="gather"src="./media/img/question.png" alt="" width="50px" />
+            </a>
+        </li>
     </ul>
 
     <main>
