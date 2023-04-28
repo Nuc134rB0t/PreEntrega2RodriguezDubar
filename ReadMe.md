@@ -19,61 +19,81 @@
 # Bitácora de cambios #
 
 
-# Versión 1.1 - Tag v1.1
 
-# Correcciones #
 
-## index.html
+
+## Versión 1.2 - Tag v1.2 ##
+
+### Actualizaciones:
+
+- Se agregan 3 páginas: personajes.html, pelicula.html, fanaticos.html.
+
+
+
+
+
+
+## Versión 1.1 - Tag v1.1 ##
+
+### Correcciones:
+
+#### index.html
 - Cambios menores.
 
-## juegos.html
+#### juegos.html
 - Sonido de los ladrillos.
 
-## ReadMe.md
+#### ReadMe.md
 - Camios en el uso de los simbolos.
 
 
 
 
-# Versión 1 - Tag v1.0
 
-# ./
-- Liberada v1.0
 
-# Correcciones #
+## Versión 1 - Tag v1.0 ##
+
+### Correcciones:
 - Se agrega algo de padding para las pantallas móviles.
 
-# Actualizaciones #
+### Actualizaciones:
+
+#### ./
+- Liberada v1.0
+
+#### index.html
 - Se agregan moneda y puntaje que saltan al hacer clic sobre los ladrillos del menú.
 
+#### juegos.html
 
 
 
 
 
-# Beta 3 - Tag b0.3
 
-# Correcciones #
+## Beta 3 - Tag b0.3 ##
 
-## ./
+### Correcciones:
+
+#### ./
 - Se reognanizan las carpetas.
 
-## index.html
+#### index.html
 - Se agrega sonido a Ladrillos y logo de MarioBros. (Antes había quedado incorrecto).
 - Alineación del navbar mejorada.
 - Se agrega overflow-x en tamaño medio.
 - Los articulos pasan de ser div a ser articles.
 
-## juegos.html
+#### juegos.html
 - Alineación del navbar mejorada.
 - Ajustes al grid en tamaño medio y pequeño.
 
-# Actualizaciones ##
+### Actualizaciones:
 
-## index.html
+#### index.html
 - Los articulos tienen un fondo con colores interactivos.
 
-## juegos.html
+#### juegos.html
 - Las tarjetas de los juegos tienen un fondo con colores interactivos.
 
 
@@ -81,39 +101,41 @@
 
 
 
-# Beta 2 - Tag b0.2
+## Beta 2 - Tag b0.2 ##
 
-# Correcciones #
+### Correcciones:
 
-## index.html:
+#### index.html
 - Se corrigen los enlaces de los botones [Inicio] y [Juegos] del menú navbar (azul) para pantallas pequeñas.
 
-## juegos.html
+#### juegos.html
 - Se corrigen los enlaces de los botones [Inicio] y [Juegos] del menú navbar (azul) para pantallas pequeñas.
 ! Corregir grid en tamaño medio.
 
-# Actualizaciones #
+### Actualizaciones:
 
-## index.html:
+#### ./
+- Se agrega el archivo bitácoda de cambios.
+
+#### index.html
 - Se agrega título y descripción del sitio.
 - Se agregan 3 columnas con títulos e información descriptiva.
 - Se aplica comportamiento responsive con bootstrap.
 - Se agrega sonido al logo de MarioBros.
 
-## juegos.html:
+#### juegos.html
 - Se agrega sonido al logo de MarioBros.
 
-## ./
-- Se agrega el archivo bitácoda de cambios.
 
 
 
 
 
+## Beta 1 - Tag b0.1 ##
 
-# Beta 1 - Tag b0.1
+### Actualizaciones:
 
-## ./
+#### ./
 - Primer commit con todos los archivos necesarios para mostrar los avances de las páginas: index.html y juegos.html.
 
 # Hello World!

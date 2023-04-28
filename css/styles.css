@@ -118,16 +118,10 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
 }
 /** Bricks */
-.brick1:hover,
-.brick2:hover {
+.brick:hover {
     cursor: pointer;
 }
-.brick1:active {
-    position: relative;
-    top: -1px;
-    right: -1px;
-}
-.brick2:active {
+.brick:active {
     position: relative;
     top: -1px;
     right: -1px;
